@@ -1,0 +1,26 @@
+.card {
+
+float: right;
+
+
+}
+
+
+
+.jumbotron {
+
+    background-color: #2f2f2f;
+text-align: center;
+color: white;
+margin: -50px;
+
+
+
+}
+
+
+.search  {
+float: left;
+background-color: #eeeeee;
+
+}
