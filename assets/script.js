@@ -47,20 +47,23 @@ $(document).ready(function () {
 
     }
 
-        //uv index
-        function uv(city) {
+    //uv index
+    function uv(city) {
 
 
 
 
-            $.ajax({
-                method: "GET",
-                url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=8f63f215819badad4ad86bbbab862826&units=imperial"
+        $.ajax({
+            method: "GET",
+            url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=8f63f215819badad4ad86bbbab862826&units=imperial"
 
-            }).then(function (data) {
+        }).then(function (data) {
 
 
-            })
-        }
+        })
     }
+}
 )
+
+// //convert from kelvin  parent wro
+// response.daily[i].temp.max - (273.15) * 9 / 5 + 32) + "\xB0");

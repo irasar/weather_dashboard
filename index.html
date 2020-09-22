@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App </title>
   <!-- font awesome  -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <script src="https://kit.fontawesome.com/f4677e3cb7.js" crossorigin="anonymous"></script>
     <!--  bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> 
 <!--  style sheet -->
@@ -16,16 +15,11 @@
 
 
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Weather Dashboard</h1>
-    
-    </div>
-  </div>
+  <!-- <div class="jumbotron jumbotron-fluid"> -->
+<h1 class="jumbo">
 
-
-
-
+    Weather Dashboard
+</h1>
 
 
 
@@ -33,13 +27,16 @@
 <div class="container mt-5 search">
   <div class="row">
 <div class="col-md-3">
-  <form>
+  
+  <form class="form-inline">
+    <h4>Search for a city:</h4>
+    
     <div class="form-group">
-      <label for="exampleInputEmail1">Search for a city:</label>
+      
       <input type="email" class="form-control" id="weather-input" aria-describedby="emailHelp"
       placeholder="enter city">
    </div>
-    <button type="submit" class="btn btn-primary" id="weather-btn">Submit   <i class="fas fa-search"></i></button>
+    <button type="submit" class="btn btn-primary" id="weather-btn">  <i class="fas fa-search"></i></button>
   </form>
 
 
