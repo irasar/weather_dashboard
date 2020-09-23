@@ -1,3 +1,4 @@
+//global variables
 var searchForm = document.querySelector("#search-form");
 
 
@@ -7,10 +8,6 @@ var formBtn = document.querySelector("#btn-form");
 
 
 var citiesArr = [];
-
-
-
-
 
 
 
@@ -74,8 +71,8 @@ $(document).ready(function () {
                $( ".forecast" ).append( "<div class='card'>Temp: " + data.list[i].main.temp + "</div>" );
               }
             //append each card to the forecast div
-            //to do: make forecast div in html
-            
+        
+
 {/* <div class="card" style="width: 18rem;">
   <img src="..." class="card-img-top" alt="...">
   <div class="card-body">

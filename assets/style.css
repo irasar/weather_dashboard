@@ -1,10 +1,9 @@
 
-.jumbo {
-    background-color: #2f2f2f;
+.jumbotron {
+    background-color:  #49c9ff;
     text-align: center;
     color: white;
-    padding: 15px;
-/* margin-bottom: -30px; */
+
 
 }
 
