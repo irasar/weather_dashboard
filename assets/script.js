@@ -43,10 +43,11 @@ $(document).ready(function () {
             var lat = data.coord.lat
             var long = data.coord.lon
             //put city name temp windspeed on the page
+            // var forecastDay1 = moment().add(1, 'd').format("dddd, MMMM Do" );
             $(".city").text(data.name);
-            $(".temperature").text("Temperature " + data.main.temp);
-            $(".humidity").text("Humidity " + data.main.humidity);
-            $(".windspeed").text("Windspeed " + data.wind.speed);
+            $(".temperature").text("Temperature: " + data.main.temp);
+            $(".humidity").text("Humidity: " + data.main.humidity);
+            $(".windspeed").text("Windspeed: " + data.wind.speed);
             //call uv function
             uv(lat, long);
         })
@@ -69,16 +70,21 @@ $(document).ready(function () {
             for (var i = 0; i < data.list.length; i += 8) {
 
 
+// var forecastDay1 = moment().add(1, 'd').format("dddd, MMMM Do" );
                 var card = $("<div>").addClass("card");
 
+// var forecastDay1 = moment().add(1, 'd').format("dddd, MMMM Do" );
+      
+                var card = $("<div>").addClass("card");
+// var forecastDay1 = moment().add(1, 'd').format("dddd, MMMM Do" );
+      
 
                 var card = $("<div>").addClass("card");
-
-
+// var forecastDay1 = moment().add(1, 'd').format("dddd, MMMM Do" );
+      
                 var card = $("<div>").addClass("card");
-
-                var card = $("<div>").addClass("card");
-
+// var forecastDay1 = moment().add(1, 'd').format("dddd, MMMM Do" );
+      
                 var card = $("<div>").addClass("card");
 
 
@@ -104,14 +110,14 @@ $(document).ready(function () {
 
 
 
-
+//make an ajax call to get the 5day forecast
         $.ajax({
             method: "GET",
             url: "http://api.openweathermap.org/data/2.5/uvi?lat=" + lat + "&lon=" + long + "&appid=8f63f215819badad4ad86bbbab862826&"
 
         }).then(function (data) {
-            console.log(data);
-            $(".uvindex").text("UV Index " + data.value);
+            //making uv index display on dom
+            $(".uvindex").text("UV Index: " + data.value);
         })
     }
 }
@@ -120,5 +126,3 @@ $(document).ready(function () {
 // //convert from kelvin  parent wro
 // response.daily[i].temp.max - (273.15) * 9 / 5 + 32) + "\xB0");
 
-
-// var forecastDay1 = moment().add(1, 'd').format("dddd, MMMM Do" );

@@ -28,7 +28,7 @@ Here is a link to the webpage:
 
 ## Usage 
 
-![alt text](assets/planner.png)
+![alt text](assets/weather.png)
 
 
 ## Credits

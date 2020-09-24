@@ -1,9 +1,15 @@
 
-.jumbotron {
-    background-color:  #49c9ff;
+.brain {
+
+
+    margin-left: -200px;
+    margin-right: -200px;
+    margin-bottom: 40px;
+    background-color: #00ced1;
     text-align: center;
     color: white;
-
+     padding: 30px
+   
 
 }
 
@@ -21,10 +27,15 @@
 }
 
 .cardB {
-    background-color:  #49c9ff;
+    
+    background-color:  #00ced1;
     color:   white;
-    margin: 20px;
+    margin: 20px;   
+    float: right;
     padding: 20px;
     border-radius: 7px;
     display: inline;
+  
 }
+
+
