@@ -22,7 +22,7 @@ $(document).ready(function () {
         //get the city that the user put in 
         var cityInput = $("#weather-input").val().trim();
 
-        console.log(cityInput);
+      
         //get current weather with the city they chose
         currentWeather(cityInput)
         //get the 5 day forecast with the city they chose
@@ -47,7 +47,6 @@ $(document).ready(function () {
             $(".humidity").text("Humidity " + data.main.humidity);
             $(".windspeed").text("Windspeed " + data.wind.speed);
 
-            console.log(data);
             uv(lat, long);
         })
     }
@@ -67,20 +66,25 @@ $(document).ready(function () {
             // console.log("five day", data.list)
             //loop over data and create cards with info for each day
             for (var i = 0; i < data.list.length; i+=8) {
+
                console.log(data.list[i].main.temp);
                $( ".forecast" ).append( "<div class='card'>Temp: " + data.list[i].main.temp + "</div>" );
+            var card = $("<div>");
+            var cardBody = $("<div>");
+            var cardText = $("<p>");
+            card.addClass("cardB");
+            cardBody.addClass("card-body");
+            cardText.text(data.list[i].main.temp);
+            cardBody.append(cardText);
+            card.append(cardBody);
+            $(".forecast").append(card);
+            
+
               }
             //append each card to the forecast div
         
 
-{/* <div class="card" style="width: 18rem;">
-  <img src="..." class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div> */}
+{}
         })
 
 
