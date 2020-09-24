@@ -63,11 +63,11 @@ $(document).ready(function () {
             url: "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=8f63f215819badad4ad86bbbab862826&units=imperial"
 
         }).then(function (data) {
-            // console.log("five day", data.list)
+     
             //loop over data and create cards with info for each day
             for (var i = 0; i < data.list.length; i+=8) {
 
-               console.log(data.list[i].main.temp);
+              
                $( ".forecast" ).append( "<div class='card'>Temp: " + data.list[i].main.temp + "</div>" );
             var card = $("<div>");
             var cardBody = $("<div>");
