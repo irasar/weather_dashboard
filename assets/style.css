@@ -22,6 +22,9 @@
 
 .cardB {
     background-color:  #49c9ff;
-    color:    #49c9ff;
-    /* display: inline; */
+    color:   white;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 7px;
+    display: inline;
 }
