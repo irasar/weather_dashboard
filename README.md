@@ -3,7 +3,7 @@
 
 ## Description 
 
-This application is a weather dashboard that finds the weather conditions of any city in the world. It provides you with the current weather data and a five-day forecast. The webpage also shows your recent search cities using local storage. I have used the Open Weather API to retrieve the data. The current weather section displays the following:
+This application is a weather dashboard that finds the weather conditions of any city in the world. It provides you with the current weather data and a five-day forecast. The webpage also shows your recent search cities using local storage. The webpage was created using jQuery,javascript,html, and css. I have used the Open Weather API to retrieve the data. The current weather section displays the following:
 -The city
 -The temperature
 -The Humidity
