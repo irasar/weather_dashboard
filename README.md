@@ -1,5 +1,6 @@
 # weather_dashboard
 
+ https://irasar.github.io/weather_dashboard/
 
 ## Description 
 
@@ -23,8 +24,6 @@ While the 5-day forecast includes:
 
 There are no installations required. It will simply open up in a browser window.
 
-Here is a link to the webpage:
- https://irasar.github.io/weather_dashboard/
 
 ## Usage 
 
